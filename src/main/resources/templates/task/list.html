@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragment.html :: header('Tasks')"></head>
+<body class="myb">
+<section th:include="fragment.html :: navbar"></section>
+
+
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="task,iter : ${tasks}">
+                <td th:text="${iter.count}"></td>
+                <td th:text="${task.name}"></td>
+                <td th:text="${task.description}"></td>
+                <a th:href="@{/task/create/{id}(id=${task.columnId})}" class="btn btn-success">➕ New Task</a>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<section th:include="fragment.html :: js-files"></section>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Index: src/main/java/uz/doston/springcrm/entity/task/Task.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uz.doston.springcrm.entity.task;\r\n\r\n\r\nimport lombok.Getter;\r\nimport lombok.Setter;\r\nimport uz.doston.springcrm.entity.Auditable;\r\nimport uz.doston.springcrm.entity.project.ProjectColumn;\r\nimport uz.doston.springcrm.entity.project.ProjectMember;\r\nimport uz.doston.springcrm.enums.Level;\r\n\r\nimport javax.persistence.*;\r\nimport java.util.Date;\r\nimport java.util.List;\r\n\r\n@Getter\r\n@Setter\r\n@Entity\r\n@Table(schema = \"task\")\r\npublic class Task extends Auditable {\r\n\r\n    @ManyToOne\r\n    @JoinColumn(name=\"project_column_id\", nullable=false)\r\n    private ProjectColumn projectColumn;\r\n\r\n    @ManyToMany(fetch = FetchType.EAGER)\r\n    @JoinTable(\r\n            schema = \"task\",\r\n            name = \"task_member\",\r\n            joinColumns = @JoinColumn(name = \"task_id\"),\r\n            inverseJoinColumns = @JoinColumn(name = \"project_member_id\"))\r\n    private List<ProjectMember> projectMembers;\r\n\r\n\r\n    @Column(nullable = false,name = \"project_id\")\r\n    private Long projectId;\r\n\r\n    @Column(nullable = false,name = \"owner_id\")\r\n    private Long ownerId;\r\n\r\n    @Column(nullable = false)\r\n    private String name;\r\n\r\n    private String description;\r\n\r\n    private Level level;\r\n\r\n    private Date deadline;\r\n\r\n    private Integer priority;\r\n\r\n    private boolean completed;\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uz/doston/springcrm/entity/task/Task.java b/src/main/java/uz/doston/springcrm/entity/task/Task.java
+--- a/src/main/java/uz/doston/springcrm/entity/task/Task.java	
++++ b/src/main/java/uz/doston/springcrm/entity/task/Task.java	
+@@ -4,6 +4,7 @@
+ import lombok.Getter;
+ import lombok.Setter;
+ import uz.doston.springcrm.entity.Auditable;
++import uz.doston.springcrm.entity.auth.AuthUser;
+ import uz.doston.springcrm.entity.project.ProjectColumn;
+ import uz.doston.springcrm.entity.project.ProjectMember;
+ import uz.doston.springcrm.enums.Level;
+@@ -27,8 +28,8 @@
+             schema = "task",
+             name = "task_member",
+             joinColumns = @JoinColumn(name = "task_id"),
+-            inverseJoinColumns = @JoinColumn(name = "project_member_id"))
+-    private List<ProjectMember> projectMembers;
++            inverseJoinColumns = @JoinColumn(name = "user_id"))
++    private List<AuthUser> taskMembers;
+ 
+ 
+     @Column(nullable = false,name = "project_id")

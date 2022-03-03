@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c3d1c60-1ff5-4e2c-9e24-90f3e5edd745" name="Changes" comment="for muhammadkomil" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="developer" />
+                    <option name="lastUsedInstant" value="1646116549" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1646116524" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="25VRdHzXcF7WMmP8KyONcNnFY8h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="vcs.patch.path" value="$PROJECT_DIR$/../../../" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\project" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\static\imges" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\project\column" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\auth" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\task" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\static\imges" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\project\column" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\task" />
+      <recent name="D:\PDP Academy\SPRING\spring-crm\src\main\resources\templates\auth" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringCrmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-crm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uz.doston.springcrm.SpringCrmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c3d1c60-1ff5-4e2c-9e24-90f3e5edd745" name="Changes" comment="" />
+      <created>1645610355295</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645610355295</updated>
+      <workItem from="1645610357170" duration="11413000" />
+      <workItem from="1645627935583" duration="15283000" />
+      <workItem from="1645684133390" duration="2446000" />
+      <workItem from="1645693948530" duration="11197000" />
+      <workItem from="1645707648653" duration="2912000" />
+      <workItem from="1645759385589" duration="9137000" />
+      <workItem from="1645778636207" duration="16209000" />
+      <workItem from="1645796109285" duration="1392000" />
+      <workItem from="1645810098643" duration="11539000" />
+      <workItem from="1645881471727" duration="4042000" />
+      <workItem from="1645889986028" duration="6997000" />
+      <workItem from="1645943398001" duration="28480000" />
+      <workItem from="1646020206339" duration="3369000" />
+      <workItem from="1646039529441" duration="2666000" />
+      <workItem from="1646048300221" duration="4162000" />
+      <workItem from="1646110156460" duration="10110000" />
+      <workItem from="1646123055900" duration="9085000" />
+      <workItem from="1646203878227" duration="1158000" />
+      <workItem from="1646237589015" duration="5925000" />
+      <workItem from="1646271962645" duration="594000" />
+      <workItem from="1646298263460" duration="1660000" />
+      <workItem from="1646306307780" duration="167000" />
+      <workItem from="1646306694147" duration="103000" />
+    </task>
+    <task id="LOCAL-00001" summary="service">
+      <created>1645614941676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645614941676</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Full version">
+      <created>1645616496034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645616496034</updated>
+    </task>
+    <task id="LOCAL-00003" summary="entity changed">
+      <created>1645637405055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645637405055</updated>
+    </task>
+    <task id="LOCAL-00004" summary="little changed">
+      <created>1645684631981</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645684631981</updated>
+    </task>
+    <task id="LOCAL-00005" summary="little changed">
+      <created>1645698344908</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645698344909</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changed">
+      <created>1645762709668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645762709668</updated>
+    </task>
+    <task id="LOCAL-00007" summary="enormous change in servicess">
+      <created>1645795590639</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645795590639</updated>
+    </task>
+    <task id="LOCAL-00008" summary="asd">
+      <created>1645795614431</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645795614431</updated>
+    </task>
+    <task id="LOCAL-00009" summary="meningpatchim">
+      <created>1645795823248</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645795823249</updated>
+    </task>
+    <task id="LOCAL-00010" summary="enormous change in servicess">
+      <created>1645797419736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1645797419736</updated>
+    </task>
+    <task id="LOCAL-00011" summary="service completed">
+      <created>1645821648629</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645821648629</updated>
+    </task>
+    <task id="LOCAL-00012" summary="finally">
+      <created>1645899197296</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1645899197297</updated>
+    </task>
+    <task id="LOCAL-00013" summary="page 2">
+      <created>1645957105130</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1645957105130</updated>
+    </task>
+    <task id="LOCAL-00014" summary="page 2 completed">
+      <created>1645981930466</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1645981930466</updated>
+    </task>
+    <task id="LOCAL-00015" summary="page 2 completed">
+      <created>1645985654241</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1645985654242</updated>
+    </task>
+    <task id="LOCAL-00016" summary="index2">
+      <created>1645988072829</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1645988072829</updated>
+    </task>
+    <task id="LOCAL-00017" summary="column CRUD">
+      <created>1646023492563</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1646023492564</updated>
+    </task>
+    <task id="LOCAL-00018" summary="html changed">
+      <created>1646120401900</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1646120401900</updated>
+    </task>
+    <task id="LOCAL-00019" summary="html changeddaasdsa">
+      <created>1646126875077</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1646126875077</updated>
+    </task>
+    <task id="LOCAL-00020" summary="for muhammadkomil">
+      <created>1646136824916</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1646136824916</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="service" />
+    <MESSAGE value="Full version" />
+    <MESSAGE value="entity changed" />
+    <MESSAGE value="little changed" />
+    <MESSAGE value="changed" />
+    <MESSAGE value="enormous change in services" />
+    <MESSAGE value="asd" />
+    <MESSAGE value="meningpatchim" />
+    <MESSAGE value="enormous change in servicess" />
+    <MESSAGE value="service completed" />
+    <MESSAGE value="finally" />
+    <MESSAGE value="page 2" />
+    <MESSAGE value="page 2 completed" />
+    <MESSAGE value="index2" />
+    <MESSAGE value="column CRUD" />
+    <MESSAGE value="html changed" />
+    <MESSAGE value="html changeddaasdsa" />
+    <MESSAGE value="for muhammadkomil" />
+    <option name="LAST_COMMIT_MESSAGE" value="for muhammadkomil" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uz/doston/springcrm/service/project/ProjectService.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

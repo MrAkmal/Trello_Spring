@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+
+    <link rel="stylesheet" href="../../static/css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Red+Hat+Display&display=swap"
+            rel="stylesheet">
+
+
+</head>
+<body>
+<div class="container" th:method="post">
+    <form th:action="@{'/organization/update/' + ${organization.id}}" method="post" th:object="${organization}"
+          enctype="multipart/form-data"
+    >
+        <div class="login-text">
+            <h3>Update Organization</h3>
+        </div>
+
+        <div class="login-input">
+
+            <div>
+                <input name="name" type="text" th:value="*{name}">
+                <span style="color: red" th:errors="*{name}"></span>
+            </div>
+
+            <div>
+                <input name="email" type="email" th:value="*{email}">
+            </div>
+
+            <div>
+                <input name="logo" type="file" placeholder="Logo">
+                <span style="color: red" th:errors="*{logo}"></span>
+            </div>
+            <div>
+                <input name="location" type="text" th:value="*{location}">
+            </div>
+
+
+        </div>
+        <div class="goBack" id="link">
+            <a th:href="@{/list}">Back</a>
+            <div class="login-button">
+                <button type="submit">Update</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

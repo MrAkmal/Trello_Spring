@@ -1,0 +1,233 @@
+Index: src/main/resources/templates/task/detail.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\" xmlns:th=\"http://www.thymeleaf.org\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Task Detail</title>\r\n    <link th:href=\"@{/css/index3.css}\" rel=\"stylesheet\">\r\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Red+Hat+Display&family=Rubik:wght@400;500;600;700&display=swap\"\r\n          rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<header>\r\n    <main>\r\n        <div class=\"menu-bar\">\r\n            <i class=\"fas fa-bars\"></i>\r\n        </div>\r\n        <div class=\"logo\">\r\n            <img th:src=\"@{/imges/logo.png}\" alt=\"\">\r\n        </div>\r\n\r\n        <div class=\"link\">\r\n            <a href=\"#\"> -- Clients\r\n            </a>\r\n            <a href=\"#\">Task manager</a>\r\n            <a href=\"#\">Inbox</a>\r\n            <a href=\"#\">Contacts</a>\r\n        </div>\r\n    </main>\r\n\r\n    <aside>\r\n        <nav>\r\n            <div class=\"input\">\r\n                <div>\r\n                    <i class=\"fas fa-search\"></i>\r\n                </div>\r\n\r\n                <input type=\"text\" placeholder=\"Search\">\r\n            </div>\r\n\r\n            <div class=\"user-information\">\r\n                <div class=\"icon\">\r\n                    <img th:src=\"@{/imges/bell.png}\" alt=\"\">\r\n                    <i class=\"far fa-envelope\"></i>\r\n                </div>\r\n\r\n                <div class=\"user\">\r\n                    <img th:src=\"@{/imges/useer.png}\" alt=\"\">\r\n                    <p>Azhar I.\r\n                        <i class=\"fas fa-angle-down\"></i>\r\n                    </p>\r\n                </div>\r\n\r\n            </div>\r\n        </nav>\r\n\r\n        <div class=\"container\">\r\n            <h4 th:text=\"${task.name}\"></h4>\r\n\r\n            <div class=\"contents\">\r\n                <div class=\"content-actions\">\r\n                    <h5>Actions</h5>\r\n                    <div class=\"actions-box\">\r\n                        <h6>CRM system design</h6>\r\n                        <p><b>Activity: </b>12/04/2021, 6:37 p.m </p>\r\n                        <p>Приступил(-а) к задаче</p>\r\n                        <span>\r\n                                <img th:src=\"@{/imges/Ellipse.png}\" alt=\"\">Azhar\r\n                            </span>\r\n                    </div>\r\n\r\n                    <div class=\"actions-box\">\r\n                        <h6>CRM system design</h6>\r\n                        <p><b>Activity: </b>12/04/2021, 6:37 p.m </p>\r\n                        <p>Приступил(-а) к задаче</p>\r\n                        <span>\r\n                                <img th:src=\"@{/imges/Ellipse.png}\" alt=\"\">Azhar\r\n                            </span>\r\n                    </div>\r\n\r\n                    <div class=\"actions-box\">\r\n                        <h6>CRM system design</h6>\r\n                        <p><b>Activity: </b>12/04/2021, 6:37 p.m </p>\r\n                        <p>Приступил(-а) к задаче</p>\r\n                        <span>\r\n                                <img th:src=\"@{/imges/Ellipse.png}\" alt=\"\">Azhar\r\n                            </span>\r\n                    </div>\r\n\r\n                    <div class=\"actions-box\">\r\n                        <h6>CRM system design</h6>\r\n                        <p><b>Activity: </b>12/04/2021, 6:37 p.m </p>\r\n                        <p>Приступил(-а) к задаче</p>\r\n                        <span>\r\n                                <img th:src=\"@{/imges/Ellipse.png}\" alt=\"\">Azhar\r\n                            </span>\r\n                    </div>\r\n\r\n                    <div class=\"actions-box\">\r\n                        <h6>CRM system design</h6>\r\n                        <p><b>Activity: </b>12/04/2021, 6:37 p.m </p>\r\n                        <p>Приступил(-а) к задаче</p>\r\n                        <span>\r\n                                <img th:src=\"@{/imges/Ellipse.png}\" alt=\"\">Azhar\r\n                            </span>\r\n                    </div>\r\n                </div>\r\n                <div class=\"container-box\">\r\n                    <div class=\"content-box\">\r\n                        <p th:text=\"${task.description}\"></p>\r\n                    </div>\r\n                    <div class=\"content-box\">\r\n                        <textarea placeholder=\"Комментарий...\" id=\"\" cols=\"10\" rows=\"3\"></textarea>\r\n                        <button type=\"submit\">Опубликовать</button>\r\n                    </div>\r\n\r\n                    <div class=\"content-box\">\r\n                        <div class=\"flex\">\r\n                            <p class=\"box-text\"><img th:src=\"@{/imges/avatar.png}\" alt=\"\">Artur </p>\r\n                            <p>12/04/2021, 6:37 p.m</p>\r\n                        </div>\r\n\r\n                        <span>1. Добавлены шаблонные теги для подсчёта часов, потраченных на закрытые задачи.</span>\r\n                    </div>\r\n                </div>\r\n                <div class=\"content-status\">\r\n                    <div class=\"status\">\r\n                        <div class=\"status-text\">\r\n                            <p>Priority:</p>\r\n                            <button class=\"low\">Low</button>\r\n                        </div>\r\n\r\n                        <div class=\"status-text\">\r\n                            <p>Priority:</p>\r\n                            <span>Frozen</span>\r\n                        </div>\r\n\r\n                        <div class=\"status-text\">\r\n                            <p>Priority:</p>\r\n                            <span>12/04/2021</span>\r\n                        </div>\r\n\r\n                        <div class=\"status-text\">\r\n                            <p>Priority:</p>\r\n                            <span>21/04/2021</span>\r\n                        </div>\r\n\r\n                        <div class=\"status-text\">\r\n                            <p>Priority:</p>\r\n                            <span>Adyl, Azhar, Arthur</span>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"btn\">\r\n                        <button type=\"submit\">Change the priority\r\n                            <img th:src=\"@{/imges/down.png}\" alt=\"\">\r\n                        </button>\r\n\r\n                        <button type=\"submit\">Change the priority\r\n                            <img th:src=\"@{/imges/down.png}\" alt=\"\">\r\n                        </button>\r\n\r\n                        <button type=\"submit\">\r\n                            <img th:src=\"@{/imges/usercheck.png}\" alt=\"\">Become a participant\r\n                        </button>\r\n\r\n                        <button type=\"submit\">\r\n                            <img th:src=\"@{/imges/ion_snow.png}\" alt=\"\">Freeze the task\r\n                        </button>\r\n\r\n                        <button type=\"submit\">\r\n                            <img th:src=\"@{/imges/check.png}\" alt=\"\">Close task\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </aside>\r\n\r\n</header>\r\n\r\n<script>\r\n    const menu = document.querySelector(\".menu-bar\")\r\n    const main = document.querySelector(\"main\")\r\n    menu.addEventListener(\"click\", () => {\r\n        main.classList.toggle(\"open\")\r\n    })\r\n</script>\r\n</body>\r\n</html>
+===================================================================
+diff --git a/src/main/resources/templates/task/detail.html b/src/main/resources/templates/task/detail.html
+--- a/src/main/resources/templates/task/detail.html	
++++ b/src/main/resources/templates/task/detail.html	
+@@ -108,6 +108,8 @@
+                             </span>
+                     </div>
+                 </div>
++
++
+                 <div class="container-box">
+                     <div class="content-box">
+                         <p th:text="${task.description}"></p>
+Index: src/main/resources/templates/project/detail.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\" xmlns:th=\"http://www.thymeleaf.org\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Index html one</title>\r\n    <link th:href=\"@{/css/index2.css}\" rel=\"stylesheet\">\r\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Red+Hat+Display&family=Rubik:wght@400;500;600;700&display=swap\"\r\n          rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<header>\r\n    <main>\r\n        <div class=\"menu-bar\">\r\n            <i class=\"fas fa-bars\"></i>\r\n        </div>\r\n        <div class=\"logo\">\r\n            <img th:src=\"@{/imges/logo.png}\" alt=\"\">\r\n        </div>\r\n\r\n        <div class=\"link\">\r\n            <a href=\"#\"> -- Clients\r\n            </a>\r\n            <a href=\"#\">Task manager</a>\r\n            <a href=\"#\">Inbox</a>\r\n            <a href=\"#\">Contacts</a>\r\n        </div>\r\n    </main>\r\n\r\n    <aside>\r\n        <nav>\r\n            <div class=\"input\">\r\n                <div>\r\n                    <i class=\"fas fa-search\"></i>\r\n                </div>\r\n\r\n                <input type=\"text\" placeholder=\"Search\">\r\n            </div>\r\n\r\n            <div class=\"user-information\">\r\n                <div class=\"icon\">\r\n                    <img th:src=\"@{/imges/bell.png}\" alt=\"\">\r\n                    <i class=\"far fa-envelope\"></i>\r\n                </div>\r\n\r\n                <div class=\"user\">\r\n                    <img th:src=\"@{/imges/useer.png}\" alt=\"\">\r\n                    <p>Azhar I.\r\n                        <i class=\"fas fa-angle-down\"></i>\r\n                    </p>\r\n                </div>\r\n\r\n            </div>\r\n\r\n        </nav>\r\n\r\n        <div class=\"container\" th:object=\"${project}\">\r\n            <h3 th:text=\"${project.name}\"></h3>\r\n\r\n            <div>\r\n                <form th:action=\"@{/project/close/{id}(id=${project.id})}\" method=\"post\">\r\n                    <button type=\"submit\" class=\"btn btn-primary\">Close Project</button>\r\n                </form>\r\n\r\n                <form th:action=\"@{/project/delete/{id}(id=${project.id})}\">\r\n                    <button type=\"submit\" class=\"btn btn-primary\">Delete Project</button>\r\n                </form>\r\n            </div>\r\n\r\n\r\n            <div class=\"contents\" th:object=\"${participants}\">\r\n                <div class=\"content\">\r\n                    <div class=\"box\">\r\n                        <p><b>Date added:</b> <span th:text=\"${project.createdAt}\"> </span></p>\r\n                        <p><b>Deadline:</b><span th:text=\"${project.deadline}\"> </span></p>\r\n                        <p><b>Participants:</b><span th:text=\"${participants}\"></span></p>\r\n                    </div>\r\n                    <div class=\"content-box\">\r\n                        <p>Менеджер для внутреннего пользования, предназначенный для учета статистики и трекинга задач.\r\n                        </p>\r\n                    </div>\r\n                    <div class=\"boxs\" th:object=\"${frozenTasks}\">\r\n                        <div class=\"boxs2\" th:object=\"${tasksCount}\">\r\n                            <div class=\"boxs3\" th:object=\"${doneTasks}\">\r\n                                <p><b>All tasks:</b> <span th:text=\"${tasksCount}\"> </span></p>\r\n                                <p><b>Done:</b> <span th:text=\"${doneTasks}\"></span></p>\r\n                                <p><b>Frozen:</b> <span th:text=\"${frozenTasks}\"></span></p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"todoContainer\">\r\n\r\n                    <tr th:each=\"column,iter : ${columns}\">\r\n\r\n                        <div class=\"todoContent-box\">\r\n                            <div class=\"todo-img\">\r\n                                <p th:utext=\"${column.name}\"></p>\r\n                                <img th:src=\"@{/imges/plus-circle.png}\">\r\n                            </div>\r\n\r\n                            <td th:each=\"task,iter : ${column.tasks}\">\r\n                                <div class=\"todo-box\">\r\n                                    <div>\r\n                                        <form th:action=\"@{/task/detail/{id}(id=${task.id})}\" method=\"post\">\r\n                                            <button>\r\n                                                <a th:text=\"${task.name}\"></a>\r\n                                            </button>\r\n                                        </form>\r\n                                        <button th:class=\"${task.level}\" th:utext=\"${task.level}\"></button>\r\n                                    </div>\r\n                                    <div class=\"task-participants\" th:each=\"member,iterMember : ${task.taskMembers}\">\r\n                                        <p><span>Participant:  </span> <b th:utext=\"${member.username}\"></b></p>\r\n                                    </div>\r\n                                </div>\r\n                            </td>\r\n                        </div>\r\n                    </tr>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </aside>\r\n\r\n</header>\r\n\r\n<script>\r\n    const menu = document.querySelector(\".menu-bar\")\r\n    const main = document.querySelector(\"main\")\r\n    menu.addEventListener(\"click\", () => {\r\n        main.classList.toggle(\"open\")\r\n    })\r\n</script>\r\n</body>\r\n</html>
+===================================================================
+diff --git a/src/main/resources/templates/project/detail.html b/src/main/resources/templates/project/detail.html
+--- a/src/main/resources/templates/project/detail.html	
++++ b/src/main/resources/templates/project/detail.html	
+@@ -5,12 +5,13 @@
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Index html one</title>
+-    <link th:href="@{/css/index2.css}" rel="stylesheet">
+-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
++    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">-->
++    <link rel="stylesheet" href="/webjars/bootstrap/4.6.1/css/bootstrap.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Red+Hat+Display&family=Rubik:wght@400;500;600;700&display=swap"
+           rel="stylesheet">
++    <link th:href="@{/css/index2.css}" rel="stylesheet">
+ </head>
+ <body>
+ <header>
+@@ -99,26 +100,30 @@
+                     <tr th:each="column,iter : ${columns}">
+ 
+                         <div class="todoContent-box">
+-                            <div class="todo-img">
+-                                <p th:utext="${column.name}"></p>
+-                                <img th:src="@{/imges/plus-circle.png}">
+-                            </div>
++                            <div class="content-actions">
++
++                                <div class="todo-img">
++                                    <p th:utext="${column.name}"></p>
++                                    <img th:src="@{/imges/plus-circle.png}" alt="yui">
++                                </div>
+ 
+-                            <td th:each="task,iter : ${column.tasks}">
+-                                <div class="todo-box">
+-                                    <div>
+-                                        <form th:action="@{/task/detail/{id}(id=${task.id})}" method="post">
+-                                            <button>
+-                                                <a th:text="${task.name}"></a>
+-                                            </button>
+-                                        </form>
+-                                        <button th:class="${task.level}" th:utext="${task.level}"></button>
+-                                    </div>
+-                                    <div class="task-participants" th:each="member,iterMember : ${task.taskMembers}">
+-                                        <p><span>Participant:  </span> <b th:utext="${member.username}"></b></p>
+-                                    </div>
+-                                </div>
+-                            </td>
++                                <td th:each="task,iter : ${column.tasks}">
++                                    <div class="todo-box">
++                                        <div>
++                                            <form th:action="@{/task/detail/{id}(id=${task.id})}" method="post">
++                                                <button>
++                                                    <a th:text="${task.name}"></a>
++                                                </button>
++                                            </form>
++                                            <button th:class="${task.level}" th:utext="${task.level}"></button>
++                                        </div>
++                                        <div class="task-participants"
++                                             th:each="member,iterMember : ${task.taskMembers}">
++                                            <p><span>Participant:  </span> <b th:text="${member.username}"></b></p>
++                                        </div>
++                                    </div>
++                                </td>
++                            </div>
+                         </div>
+                     </tr>
+                 </div>
+Index: src/main/java/uz/doston/springcrm/controller/HomeController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uz.doston.springcrm.controller;\r\n\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\n\r\n@Controller\r\npublic class HomeController {\r\n    @GetMapping(\"\")\r\n    public String homePage() {\r\n        return \"index/index\";\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/uz/doston/springcrm/controller/HomeController.java b/src/main/java/uz/doston/springcrm/controller/HomeController.java
+--- a/src/main/java/uz/doston/springcrm/controller/HomeController.java	
++++ b/src/main/java/uz/doston/springcrm/controller/HomeController.java	
+@@ -5,8 +5,8 @@
+ 
+ @Controller
+ public class HomeController {
+-    @GetMapping("")
++    @GetMapping("/")
+     public String homePage() {
+-        return "index/index";
++        return "organization/list";
+     }
+ }
+Index: src/main/resources/static/css/index2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: Rubik;\r\n}\r\n\r\nheader {\r\n  display: grid;\r\n  grid-template-columns: 300px 1fr;\r\n  height: 100vh;\r\n  overflow-y: hidden;\r\n}\r\n\r\nheader main {\r\n  width: 100%;\r\n  height: 100vh;\r\n  background: #f8f8fb;\r\n  padding: 130px 0 0 80px;\r\n}\r\n\r\n.menu-bar {\r\n  position: absolute;\r\n  top: 20px;\r\n  right: 20px;\r\n  font-size: 24px;\r\n  display: none;\r\n}\r\n\r\n.link {\r\n  margin-top: 100px;\r\n}\r\n\r\n.link a {\r\n  display: block;\r\n  font-style: normal;\r\n  font-weight: normal;\r\n  font-size: 18px;\r\n  line-height: 20px;\r\n  color: #000000;\r\n  text-decoration: none;\r\n  margin: 30px 0;\r\n}\r\n\r\n.link a:first-child {\r\n  font-style: normal;\r\n  font-weight: 500;\r\n}\r\n\r\naside nav {\r\n  width: 100%;\r\n  height: 100px;\r\n  background: #ffffff;\r\n  box-shadow: 1px 2px 11px rgba(148, 148, 148, 0.25);\r\n}\r\n\r\nnav {\r\n  width: 100%;\r\n  display: grid;\r\n  grid-template-columns: 1fr 350px;\r\n}\r\n\r\nnav .input {\r\n  display: flex;\r\n  align-items: center;\r\n  padding: 22px 25px;\r\n}\r\n\r\n.input .fa-search {\r\n  position: relative;\r\n  top: 0px;\r\n  left: 50px;\r\n}\r\n\r\n.input input {\r\n  padding: 0 70px;\r\n  width: 100%;\r\n  height: 56px;\r\n  background: #ffffff;\r\n  border: 1px solid #ebebeb;\r\n  box-sizing: border-box;\r\n  border-radius: 101px;\r\n  outline: none;\r\n}\r\n\r\n.input input::placeholder {\r\n  font-size: 18px;\r\n}\r\n\r\n.user-information {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 75px;\r\n}\r\n\r\n.icon {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 40px;\r\n}\r\n\r\n.icon img {\r\n  width: 28px;\r\n  height: 28px;\r\n}\r\n\r\n.icon i {\r\n  width: 28px;\r\n  height: 28px;\r\n  font-size: 28px;\r\n}\r\n\r\n.user {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 13px;\r\n}\r\n\r\n.user p {\r\n  font-style: normal;\r\n  font-weight: normal;\r\n  font-size: 18px;\r\n  line-height: 20px;\r\n  color: #000000;\r\n}\r\n\r\n.container {\r\n  height: 100%;\r\n  padding: 30px 50px 0 50px;\r\n}\r\n\r\n.container h3 {\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  font-size: 36px;\r\n  line-height: 20px;\r\n  color: #000000;\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.content {\r\n  display: grid;\r\n  grid-template-columns: 300px 1fr 300px;\r\n  gap: 20px;\r\n}\r\n\r\n.box {\r\n  padding: 22px;\r\n  width: 300px;\r\n  height: 100px;\r\n  background: #f6f6f6;\r\n  border-radius: 17px;\r\n}\r\n\r\n.content-box {\r\n  padding: 22px;\r\n  width: 100%;\r\n  height: 100px;\r\n  background: #f6f6f6;\r\n  border-radius: 17px;\r\n}\r\n\r\n.boxs {\r\n  padding: 22px;\r\n  width: 300px;\r\n  height: 100px;\r\n  background: #f6f6f6;\r\n  border-radius: 17px;\r\n}\r\n\r\n.todoContainer {\r\n  height: 100%;\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  gap: 20px;\r\n}\r\n\r\n.todoContent-box {\r\n  padding: 10px 18px;\r\n  margin-top: 20px;\r\n  width: 100%;\r\n  height: 400px;\r\n  background: #f6f6f6;\r\n  border-radius: 17px;\r\n}\r\n\r\n.todo-img {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n}\r\n\r\n.todo-box {\r\n  padding: 15px;\r\n  margin: 10px 0;\r\n  width: 100%;\r\n  height: 105px;\r\n  background: #e0e4ea;\r\n  border-radius: 17px;\r\n}\r\n\r\n.todo-box h4 {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  font-weight: 500;\r\n  font-size: 14px;\r\n  line-height: 20px;\r\n  color: #000000;\r\n}\r\n\r\n.todo-box h4 button {\r\n  padding: 3px 9px;\r\n  border: none;\r\n  border-radius: 14px;\r\n  font-weight: normal;\r\n  font-size: 12px;\r\n  line-height: 20px;\r\n  color: #ffffff;\r\n}\r\n\r\n.medium {\r\n  background: #ff9533;\r\n}\r\n\r\n.low {\r\n  background: #67cb65;\r\n}\r\n\r\n.high {\r\n  background: #e74444;\r\n}\r\n\r\n.todo-box p {\r\n  font-weight: normal;\r\n  font-size: 14px;\r\n  line-height: 20px;\r\n  color: #000000;\r\n}\r\n\r\n.todo-box p span {\r\n  font-weight: 500;\r\n  font-size: 14px;\r\n  line-height: 20px;\r\n  color: #6c6c6c;\r\n}\r\n\r\n/* \r\n\r\n===================  Responsive ================\r\n\r\n*/\r\n\r\n@media (max-width: 1490px) {\r\n  header {\r\n    display: grid;\r\n    grid-template-columns: 60px 1fr;\r\n  }\r\n\r\n  main {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n  }\r\n\r\n  header main {\r\n    width: 300px;\r\n    height: 100%;\r\n    position: relative;\r\n    top: 0;\r\n    left: -250px;\r\n    transition: 1s;\r\n    z-index: 2;\r\n  }\r\n\r\n  .menu-bar {\r\n    display: block;\r\n    position: fixed;\r\n    top: 20px;\r\n    left: 15px;\r\n  }\r\n\r\n  .open {\r\n    width: 300px;\r\n    position: relative;\r\n    top: 0;\r\n    left: 0px;\r\n    z-index: 1;\r\n    transition: 1s;\r\n  }\r\n}\r\n\r\n@media (max-width: 1260px) {\r\n  header {\r\n    overflow-y: scroll;\r\n  }\r\n\r\n  .todoContainer {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n}\r\n\r\n@media (max-width: 1200px) {\r\n  .content {\r\n    display: block;\r\n    width: 100%;\r\n  }\r\n\r\n  .content .box,\r\n  .content .boxs {\r\n    width: 100%;\r\n    margin: 20px 0;\r\n  }\r\n}\r\n\r\n@media (max-width: 760px) {\r\n  .todoContainer {\r\n    grid-template-columns: repeat(1, 1fr);\r\n  }\r\n}\r\n\r\n@media (max-width: 630px) {\r\n  .user-information {\r\n    width: 50px;\r\n    display: block;\r\n  }\r\n\r\n  .user {\r\n    display: block;\r\n    margin: 0;\r\n  }\r\n\r\n  nav {\r\n    display: block;\r\n  }\r\n\r\n  .icon,\r\n  .user {\r\n    display: none;\r\n  }\r\n\r\n  .container {\r\n    padding: 30px 10px;\r\n  }\r\n\r\n  .content-box {\r\n    height: 150px;\r\n  }\r\n}\r\n
+===================================================================
+diff --git a/src/main/resources/static/css/index2.css b/src/main/resources/static/css/index2.css
+--- a/src/main/resources/static/css/index2.css	
++++ b/src/main/resources/static/css/index2.css	
+@@ -147,7 +147,7 @@
+ .box {
+   padding: 22px;
+   width: 300px;
+-  height: 100px;
++  /*height: 100px;*/
+   background: #f6f6f6;
+   border-radius: 17px;
+ }
+@@ -155,7 +155,7 @@
+ .content-box {
+   padding: 22px;
+   width: 100%;
+-  height: 100px;
++  /*height: 100px;*/
+   background: #f6f6f6;
+   border-radius: 17px;
+ }
+@@ -163,7 +163,7 @@
+ .boxs {
+   padding: 22px;
+   width: 300px;
+-  height: 100px;
++  /*height: 100px;*/
+   background: #f6f6f6;
+   border-radius: 17px;
+ }
+@@ -182,6 +182,7 @@
+   height: 400px;
+   background: #f6f6f6;
+   border-radius: 17px;
++  overflow-y: scroll;
+ }
+ 
+ .todo-img {
+@@ -194,7 +195,6 @@
+   padding: 15px;
+   margin: 10px 0;
+   width: 100%;
+-  height: 105px;
+   background: #e0e4ea;
+   border-radius: 17px;
+ }
+@@ -219,15 +219,15 @@
+   color: #ffffff;
+ }
+ 
+-.medium {
++.MEDIUM {
+   background: #ff9533;
+ }
+ 
+-.low {
++.LOW {
+   background: #67cb65;
+ }
+ 
+-.high {
++.HIGH {
+   background: #e74444;
+ }
+ 
+Index: src/main/java/uz/doston/springcrm/service/auth/AuthUserService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uz.doston.springcrm.service.auth;\r\n\r\nimport org.springframework.security.crypto.password.PasswordEncoder;\r\nimport org.springframework.stereotype.Service;\r\nimport uz.doston.springcrm.dto.auth.AuthUserCreateDto;\r\nimport uz.doston.springcrm.dto.auth.AuthUserDto;\r\nimport uz.doston.springcrm.dto.auth.AuthUserUpdateDto;\r\nimport uz.doston.springcrm.entity.auth.AuthPermission;\r\nimport uz.doston.springcrm.entity.auth.AuthRole;\r\nimport uz.doston.springcrm.entity.auth.AuthUser;\r\nimport uz.doston.springcrm.enums.AuthPermissionType;\r\nimport uz.doston.springcrm.mapper.auth.AuthUserMapper;\r\nimport uz.doston.springcrm.repository.auth.AuthUserRepository;\r\nimport uz.doston.springcrm.service.base.AbstractService;\r\nimport uz.doston.springcrm.service.base.GenericCrudService;\r\n\r\nimport javax.transaction.Transactional;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.UUID;\r\n\r\n@Service\r\npublic class AuthUserService extends AbstractService<AuthUserMapper, AuthUserRepository>\r\n        implements GenericCrudService<AuthUserCreateDto, AuthUserUpdateDto> {\r\n\r\n    private final PasswordEncoder passwordEncoder;\r\n\r\n    public AuthUserService(AuthUserMapper mapper, AuthUserRepository repository, PasswordEncoder passwordEncoder) {\r\n        super(mapper, repository);\r\n        this.passwordEncoder = passwordEncoder;\r\n    }\r\n\r\n    @Override\r\n    public void delete(Long id) {\r\n\r\n    }\r\n\r\n    @Transactional\r\n    @Override\r\n    public void create(AuthUserCreateDto authUserCreateDto) {\r\n        String role = authUserCreateDto.getRole();\r\n        List<AuthPermission> permissions = new ArrayList<>();\r\n        if (\"ADMIN\".equals(role)) {\r\n            for (AuthPermissionType authPermissionType : AuthPermissionType.values()) {\r\n                String type = authPermissionType.toString();\r\n                if (type.startsWith(\"MANAGER\") || type.startsWith(\"PROJECT\")) {\r\n                    AuthPermission permission = new AuthPermission();\r\n                    permission.setName(type);\r\n                    permission.setCode(type);\r\n                    permissions.add(permission);\r\n                }\r\n            }\r\n        } else if (\"MANAGER\".equals(role)) {\r\n            for (AuthPermissionType authPermissionType : AuthPermissionType.values()) {\r\n                String type = authPermissionType.toString();\r\n                if (type.startsWith(\"EMPLOYEE\") || type.startsWith(\"TASK\")) {\r\n                    AuthPermission permission = new AuthPermission();\r\n                    permission.setName(type);\r\n                    permission.setCode(type);\r\n                    permissions.add(permission);\r\n                }\r\n            }\r\n        } else if (\"EMPLOYEE\".equals(role)) {\r\n            for (AuthPermissionType authPermissionType : AuthPermissionType.values()) {\r\n                String type = authPermissionType.toString();\r\n                if (type.startsWith(\"TASK\")) {\r\n                    AuthPermission permission = new AuthPermission();\r\n                    permission.setName(type);\r\n                    permission.setCode(type);\r\n                    permissions.add(permission);\r\n                }\r\n            }\r\n        }\r\n        AuthUser authUser = mapper.fromCreateDto(authUserCreateDto);\r\n        AuthRole authRole = new AuthRole();\r\n        authRole.setName(role);\r\n        authRole.setCode(role);\r\n        authRole.setPermissions(permissions);\r\n        authUser.setRole(authRole);\r\n        authUser.setPassword(passwordEncoder.encode(authUser.getPassword()));\r\n        authUser.setCode(UUID.randomUUID());\r\n        repository.save(authUser);\r\n    }\r\n\r\n    @Override\r\n    public void update(AuthUserUpdateDto authUserUpdateDto) {\r\n\r\n    }\r\n\r\n    public List<AuthUserDto> getAllUsers(List<Long> membersId) {\r\n\r\n        List<AuthUser> allById = repository.findAllById(membersId);\r\n        return mapper.toDto(allById);\r\n    }\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/uz/doston/springcrm/service/auth/AuthUserService.java b/src/main/java/uz/doston/springcrm/service/auth/AuthUserService.java
+--- a/src/main/java/uz/doston/springcrm/service/auth/AuthUserService.java	
++++ b/src/main/java/uz/doston/springcrm/service/auth/AuthUserService.java	
+@@ -17,6 +17,7 @@
+ import javax.transaction.Transactional;
+ import java.util.ArrayList;
+ import java.util.List;
++import java.util.Objects;
+ import java.util.UUID;
+ 
+ @Service
+@@ -30,6 +31,13 @@
+         this.passwordEncoder = passwordEncoder;
+     }
+ 
++
++    public boolean hasUser(String username, String password) {
++        AuthUser authUser = repository.findByUsername(username);
++        if (Objects.isNull(authUser)) return false;
++        return authUser.getPassword().equals(passwordEncoder.encode(password));
++    }
++
+     @Override
+     public void delete(Long id) {
+ 
+Index: src/main/java/uz/doston/springcrm/controller/AuthUserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uz.doston.springcrm.controller;\r\n\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.ui.Model;\r\nimport org.springframework.web.bind.annotation.ModelAttribute;\r\nimport org.springframework.web.bind.annotation.PostMapping;\r\nimport org.springframework.web.bind.annotation.RequestMapping;\r\nimport org.springframework.web.bind.annotation.RequestMethod;\r\nimport uz.doston.springcrm.dto.auth.AuthUserCreateDto;\r\nimport uz.doston.springcrm.service.auth.AuthUserService;\r\n\r\n@Controller\r\n@RequestMapping(value = \"/auth/*\")\r\npublic class AuthUserController extends AbstractController<AuthUserService> {\r\n\r\n    public AuthUserController(AuthUserService service) {\r\n        super(service);\r\n    }\r\n\r\n    @RequestMapping(value = \"login\", method = RequestMethod.GET)\r\n    public String loginPage() {\r\n        return \"auth/login\";\r\n    }\r\n\r\n    @RequestMapping(value = \"logout\", method = RequestMethod.GET)\r\n    public String logout() {\r\n        return \"auth/logout\";\r\n    }\r\n\r\n    @RequestMapping(value = \"register\", method = RequestMethod.GET)\r\n    public String registerPage(Model model) {\r\n        model.addAttribute(\"user\", new AuthUserCreateDto());\r\n        return \"auth/register\";\r\n    }\r\n\r\n    @PostMapping(value = \"register\")\r\n    public String register(@ModelAttribute(value = \"user\") AuthUserCreateDto dto) {\r\n        System.out.println(dto);\r\n        service.create(dto);\r\n        return \"redirect:/auth/login\";\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/uz/doston/springcrm/controller/AuthUserController.java b/src/main/java/uz/doston/springcrm/controller/AuthUserController.java
+--- a/src/main/java/uz/doston/springcrm/controller/AuthUserController.java	
++++ b/src/main/java/uz/doston/springcrm/controller/AuthUserController.java	
+@@ -22,6 +22,14 @@
+         return "auth/login";
+     }
+ 
++//    @RequestMapping(value = "login", method = RequestMethod.POST)
++//    public String login(@ModelAttribute String username, @ModelAttribute String password) {
++//        if (service.hasUser(username, password)) {
++//            return "organization/list";
++//        }
++//        return "auth/login";
++//    }
++
+     @RequestMapping(value = "logout", method = RequestMethod.GET)
+     public String logout() {
+         return "auth/logout";
